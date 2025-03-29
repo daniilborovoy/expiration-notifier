@@ -1,9 +1,10 @@
 # Token Expiration Notifier 🔔
 
 A Rust application that tracks token expiration dates and sends Telegram notifications when tokens are about to expire.
-<div style="width: 100%; display: flex; justify-content: center">
-    <img src="assets/logo.jpeg" width="200" style="border-radius: 20px">
-</div>
+
+<p align="center">
+  <img src="assets/logo.jpeg" width="200" style="border-radius: 20px" alt="Logo">
+</p>
 
 ## Features ✨
 

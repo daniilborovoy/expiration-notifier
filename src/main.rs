@@ -202,7 +202,6 @@ fn send_telegram_notification(config: &Config, message: &str) -> Result<(), Box<
 
 fn check_and_notify(conn: &Connection, config: &Config) -> SqlResult<()> {
     let expiring_tokens = get_expiring_tokens(conn, config.notification_threshold_days)?;
-    println!("Checking");
 
     for token in expiring_tokens {
         let expires_date = NaiveDate::parse_from_str(&token.expires_at, "%Y-%m-%d")
